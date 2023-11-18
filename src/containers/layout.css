@@ -1,0 +1,77 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--container-background-color);
+}
+
+.action-bar-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+}
+
+.action-bar-button img {
+  padding: 0 5px;
+  width: 18px;
+}
+
+.column-2,
+.column-3,
+.column-3-2 {
+  display: flex;
+  gap: 20px;
+}
+
+.column-3 .form-field,
+.column-2 .form-field {
+  flex: 1;
+}
+
+.column-3-2 .form-field {
+  flex: 1;
+}
+
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--inactive-menu-text-color);
+}
+
+.form-field input[type="text"],
+.form-field input[type="number"],
+.form-field input[type="date"],
+.form-field select {
+  height: 25px;
+  border: 1px solid var(--inactive-menu-text-color);
+  margin-bottom: 10px;
+  padding: 0px 5px;
+  font-size: 15px;
+}
+
+.loader{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--loader-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-text-color);
+}
+.form-field.checkbox{
+    flex-direction: row !important;
+    align-items: center;
+    padding: 15px 0 0 0;
+}

@@ -1,0 +1,124 @@
+:root {
+  --container-background-color: #F3F4F7;
+  --primary-background-color: #00BAFF;
+  --secondary-background-color: #1D5E90;
+  --sidebar-background-color: #273143;
+  --primary-text-color: #FFFFFF;
+  --error-text-color: #FF0000;
+  --inactive-menu-text-color: #A2A9B4;
+  --loader-background: #00000077;
+  --table-header-background: #3B4A65;
+}
+
+@font-face {
+    font-family: InterRegular;
+    src: url('./fonts/Inter-Regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: InterRegular;
+}
+
+/* MODAL */
+/* Background effect. It covers the entire site */
+.modal {
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Overlay effect: translucent background: black w/ partial opacity */
+  z-index: 1;
+  /* Overlay effect: positioned over other containers */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  position: fixed;
+  /* Fix position on the top-left corner*/
+  top: 0;
+  left: 0;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Enable scroll if needed */
+  /* Location of the content container */
+}
+
+.container {
+  height: auto;
+}
+
+/* Modal content */
+.modal-container {
+  background-color: white;
+  /* Width in proportion to its parent container*/
+  overflow-y: scroll;
+  /* Max width where it stops expanding */
+  height: max-content;
+  /* Height in proportion to its parent container */
+  margin: auto;
+  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  /* Auto margin according to the element width */
+  /* Optional. Rounds container corners */
+}
+
+.modal-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 80%;
+  max-width: 700px;
+  width: 100%;
+}
+
+/* Close button */
+.close {
+  color: var(--primary-text-color);
+  float: right;
+  /* Positioned to the right of the parent container whichever size it is */
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header-section {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--primary-text-color);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.action {
+  padding: 5px 30px;
+  cursor: pointer;
+  border: 1px solid var(--inactive-menu-text-color);
+  background-color: var(--primary-text-color);
+}
+
+.error-message {
+  color: var(--error-text-color);
+}

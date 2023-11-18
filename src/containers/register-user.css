@@ -1,0 +1,97 @@
+.registration-container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: gray; */
+  background: linear-gradient(to right, red, purple);
+  color: white;
+  height: 100vh;
+  width: 100%;
+}
+
+.registration-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 500px;
+  height: 650px;
+  border-style: solid;
+  padding: 0 30px;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      blue, 
+      rgba(0, 0, 0, .1)
+    ) 1 100%;
+}
+
+.registration-form img {
+  width: 200px; 
+  margin: 5px;
+  border: 2px double #FFF;
+}
+
+.registration-form h2{
+  border-bottom: 2px solid white;
+  margin-bottom: 15px;
+}
+
+.registration-container form {
+  width: 100%;
+  height: 570px;
+  padding: 0 30px;
+  overflow-y: scroll;
+}
+
+.registration-container .form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  color: white;
+}
+
+.registration-container .form-field input[type="text"],
+.registration-container .form-field input[type="submit"],
+.registration-container .form-field input[type="password"],
+.registration-container .form-field input[type="date"],
+.registration-container .form-field select {
+  height: 25px;
+  border: 1px solid var(--inactive-menu-text-color);
+  padding: 0px 5px;
+  font-size: 15px;
+  margin-bottom: 0;
+  margin-bottom: 15px;
+}
+.registration-container .error-field {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.registration-container .error-field input[type="text"],
+.registration-container .error-field input[type="password"],
+.registration-container .error-field input[type="date"] {
+  margin-bottom: -5px;
+}
+
+.registration-container input[type="text"]:disabled,
+.registration-container input[type="password"]:disabled {
+  background-color: #BBB;
+}
+.registration-container .error-field .error{
+  margin-bottom: 15px;
+}
+.registration-container .error{
+  margin-bottom: 5px;
+  color: yellow
+}
+
+.registration-container .password-help {
+  align-self: flex-end;
+  margin-bottom: -6px;
+  margin-left: -16px;
+}

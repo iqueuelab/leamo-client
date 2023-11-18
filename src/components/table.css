@@ -1,0 +1,41 @@
+table {
+  background-color: var(--primary-text-color);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  padding: 3px 5px;
+  border: 1px solid var(--container-background-color);
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background-color: var(--table-header-background);
+  color: var(--primary-text-color);
+  font-weight: 500;
+}
+
+.table-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.table-action {
+  cursor: pointer;
+}
+
+.no-results-message {
+  text-align: center;
+}
+
+.avatar,
+.selector {
+  text-align: center;
+}
+
+.avatar img {
+  width: 20px;
+}

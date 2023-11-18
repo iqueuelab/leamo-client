@@ -1,0 +1,13 @@
+.header-container {
+  display: flex;
+  background-color: var(--primary-background-color);
+}
+
+.logo-container {
+  background-color: var(--secondary-background-color);
+}
+
+.logo {
+  padding: 5px;
+  width: 135px;
+}
